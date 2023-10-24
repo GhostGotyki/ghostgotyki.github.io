@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ghost Gotyki's Home</title>
+	<style type="text/css">
+		body{
+			overflow: hidden;
+			background-color: #1f1f23;
+			color: whitesmoke;
+			margin: 10px;
+			font-family: "Inter","Roobert","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 20px;
+		}
+		.fisrt-prsn{
+			border-radius: 8px;
+			padding: 5px;
+		}
+		.nav-bar{
+			position: fixed;
+			text-align: center;
+			width: 190px;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+		.nav-bar div a{
+			display: block;
+			margin-top: 15px;
+		}
+		.body-part{
+			overflow-y: scroll;
+			display: block;
+			margin-left: 210px;
+			background-color: rgba(0, 0, 0, 0.7);
+			width: calc(100% - 220px);
+		}
+		.body-part::-webkit-scrollbar{
+			/*width: 10px;
+			height: 8px;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 0 16px 16px 0;*/
+			visibility: hidden;
+		}
+		.body-part::-webkit-scrollbar-thumb{
+			/*background-color: rgba(29, 29, 33, 0.5);
+			border-radius: 0 16px 16px 0;*/
+			visibility: hidden;
+		}
+	</style>	
+</head>
+<body>
+	<script type="text/javascript">
+		var body = document.body,
+		    html = document.documentElement;
+
+		var height = Math.max( body.scrollHeight, body.offsetHeight, 
+		                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+		console.log(height)
+	</script>
+	<div id="body">
+		<div class="nav-bar fisrt-prsn">
+			<div>
+				<a href="https://www.youtube.com/@ghostgotyki7932" target="_blank" style="margin-top: 0;"><img src="https://www.youtube.com/s/desktop/b926992e/img/favicon_96x96.png" width="64"></a>
+				<a href="https://www.tiktok.com/@gotyki" target="_blank" style="margin-top: 5px;"><img src="https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" width="64" style="border-radius: 16px;"></a>
+				<a href="https://www.twitch.tv/gotyk1" target="_blank"><img src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" width="64"></a>
+				<a href="https://discord.gg/GT5xU9vKGx" target="_blank"><img src="https://www.airofmelty.fr/wp-content/uploads/airofmelty/2022/03/media-1719.jpg" width="64" style="border-radius: 16px;"></a>
+			</div>
+		</div>
+		<div class="body-part fisrt-prsn" >
+			<h1 style="text-align: center;">Gotyki's Home</h1>
+			<p style="text-align: center;">Salut je suis Ghost Gotyki, Streamer Fortnite, Rocket League et roblox.</p>
+			<iframe src="https://player.twitch.tv/?channel=gotyk1&parent=" frameborder="0" allowfullscreen="true" scrolling="no" height="360" width="720" style="margin-left: calc((100% - 720px)/ 2);"></iframe>
+			<iframe width="720" height="360" src="https://www.youtube.com/embed/RRnYhRH7rvA?si=WfQsR54hUHodN-C3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin-left: calc((100% - 720px)/ 2);"></iframe>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	const bodyheight = document.querySelector(".nav-bar")
+	bodyheight.style.height = (height - 30).toString()+"px";
+	console.log(height.toString()+"px")
+	// document.querySelector("#body").style.height = (height - 20).toString()+"px";
+	document.querySelector(".body-part").style.height = (height - 30).toString()+"px";
+</script>
+</html>
