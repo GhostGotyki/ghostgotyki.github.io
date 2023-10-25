@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ghost Gotyki's Home</title>
+	<script type="text/javascript">
+	  	if (window.matchMedia("(max-width: 700px)").matches) {
+	    	console.log("mobile")
+	  	} else {
+	  		window.location.replace("../index.html");
+	  	}
+	</script>
+	<style type="text/css">
+		body{
+			overflow: hidden;
+			background-color: #1f1f23;
+			color: whitesmoke;
+			margin: 10px;
+			font-family: "Inter","Roobert","Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 20px;
+		}
+		.fisrt-prsn{
+			border-radius: 8px;
+			padding: 5px;
+		}
+		.nav-bar{
+			position: fixed;
+			height: 79px!important;
+			background-color: rgba(0, 0, 0, 0.7);
+			margin-top: -99px;
+			text-align: center;
+		}
+		.nav-bar div a{
+			display: inline-flex;
+			margin-top: 5px;
+		}
+		.body-part{
+			text-align: center;
+			overflow: hidden;
+			display: block;
+			margin-top: 99px;
+			background-color: rgba(0, 0, 0, 0.7);
+			width: calc(100% - 104px);
+		}
+		.body-part::-webkit-scrollbar{
+			/*width: 10px;
+			height: 8px;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 0 16px 16px 0;*/
+			visibility: hidden;
+		}
+		.body-part::-webkit-scrollbar-thumb{
+			/*background-color: rgba(29, 29, 33, 0.5);
+			border-radius: 0 16px 16px 0;*/
+			visibility: hidden;
+		}
+		html{
+ 			overflow-x:hidden; 
+ 			position: fixed;
+		}
+	</style>	
+</head>
+<body>
+	<script type="text/javascript">
+		var body = document.body,
+		    html = document.documentElement;
+
+		var height = Math.max( body.scrollHeight, body.offsetHeight, 
+		                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+		var width = Math.max( body.scrollWidth, body.offsetWidth, 
+		                       html.clientWidth, html.scrollWidth, html.offsetWidth );
+		console.log(height)
+	</script>
+	<div id="body">
+		<div class="nav-bar fisrt-prsn">
+			<div style="overflow-y: scroll;height: 79px!important;white-space: nowrap;overflow-y: hidden;">
+				<a href="https://www.youtube.com/@ghostgotyki7932" target="_blank"><img src="https://www.youtube.com/s/desktop/b926992e/img/favicon_96x96.png" width="64"></a>
+				<a href="https://www.tiktok.com/@gotyki" target="_blank"><img src="https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png" width="64" style="border-radius: 16px;"></a>
+				<a href="https://www.twitch.tv/gotyk1" target="_blank"><img src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" width="64"></a>
+				<a href="https://discord.gg/GT5xU9vKGx" target="_blank"><img src="https://www.airofmelty.fr/wp-content/uploads/airofmelty/2022/03/media-1719.jpg" width="64" style="border-radius: 16px;"></a>
+			</div>
+		</div>
+		<div class="body-part fisrt-prsn" >
+			<h1 style="text-align: center;">Gotyki's Home</h1>
+			<p style="text-align: center;">Salut je suis Ghost Gotyki, Streamer Fortnite, Rocket League et roblox.</p>
+			<iframe src="https://player.twitch.tv/?channel=gotyk1&parent=" frameborder="0" allowfullscreen="true" scrolling="no" class="iframe"></iframe>
+			<iframe src="https://www.youtube.com/embed/RRnYhRH7rvA?si=WfQsR54hUHodN-C3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="iframe"></iframe>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	const navwidth = document.querySelector(".nav-bar")
+	navwidth.style.width = (width - 30).toString()+"px";
+	const navwidth2 = document.querySelector(".nav-bar div")
+	navwidth2.style.width = (width - 30).toString()+"px";
+	document.querySelector(".body-part").style.width = (width - 30).toString()+"px";
+	console.log(width.toString()+"px")
+	// document.querySelector("#body").style.height = (height - 20).toString()+"px";
+	document.querySelector(".body-part").style.height = (height - 130).toString()+"px";
+	document.getElementsByTagName("iframe")[0].style.width = (width - 40).toString()+"px";
+	document.getElementsByTagName("iframe")[1].style.width = (width - 40).toString()+"px";
+</script>
+</html>
