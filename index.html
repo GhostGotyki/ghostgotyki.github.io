@@ -12,7 +12,6 @@
 	<style type="text/css">
 		body{
 			overflow: hidden;
-			background-color: #1f1f23;
 			color: whitesmoke;
 			margin: 10px;
 			font-family: "Inter","Roobert","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -86,5 +85,23 @@
 	console.log(height.toString()+"px")
 	// document.querySelector("#body").style.height = (height - 20).toString()+"px";
 	document.querySelector(".body-part").style.height = (height - 30).toString()+"px";
+</script>
+<script type="text/javascript">
+	BCr = Math.floor(Math.random() * 100)
+	if (BCr >= 0 && BCr <= 3) {
+		document.body.style.backgroundColor = "#1f1f23"
+	}
+	if (BCr > 3 && BCr <=26) {
+		document.body.style.backgroundColor = "#FF3333"
+	}
+	if (BCr > 26 && BCr <= 50) {
+		document.body.style.backgroundColor = "#FFF633"
+	}
+	if (BCr > 50 && BCr <= 74) {
+		document.body.style.backgroundColor = "#55FF33"
+	}
+	if (BCr > 74 && BCr <= 99) {
+		document.body.style.backgroundColor = "#3339FF"
+	}
 </script>
 </html>
